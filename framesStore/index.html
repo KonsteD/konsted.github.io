@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index-dist.css">
+        <title>FRAMES STORE</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    </head>
+    <body>
+        <div id="anchor" class="anchor"></div>
+        <div class="darkBackground"></div>
+        <header>
+            <div class="supHeader">
+                <div class="supHeader__wrapper container">
+                    <div class="supHeader__chooseList">
+                        <div class="supHeader__itemActive supHeader__itemActive--lang">
+                            <span class="supHeader__itemWord">Язык:</span>
+                            <span class="supHeader__itemName">Русский</span>
+                            <i class="supHeader__itemArrow fas fa-chevron-down"></i>
+                            <ul class="supHeader__itemMenu supHeader__itemMenu--lang">
+                                <li class="supHeader__itemNameNew">Русский</li>
+                                <li class="supHeader__itemNameNew">Українська</li>
+                                <li class="supHeader__itemNameNew">English</li>
+                            </ul>
+                        </div>
+                        <div class="supHeader__itemActive supHeader__itemActive--currency">
+                            <span class="supHeader__itemWord">Валюта:</span>
+                            <span class="supHeader__itemName">UAH</span>
+                            <i class="supHeader__itemArrow fas fa-chevron-down"></i>
+                            <ul class="supHeader__itemMenu supHeader__itemMenu--currency">
+                                <li class="supHeader__itemNameNew">RUB</li>
+                                <li class="supHeader__itemNameNew">UAH</li>
+                                <li class="supHeader__itemNameNew">USD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="supHeader__nav">
+                        <ul data-da="header__nav, 2, 800" class="supHeader__links">
+                            <li class="supHeader__link">
+                                <a href="#">Аккаунт</a>
+                            </li>
+                            <li class="supHeader__link">
+                                <a href="#">Список желаний</a>
+                            </li>
+                            <li class="supHeader__link">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="supHeader__link">
+                                <a href="#">Вход</a>
+                            </li>
+                            <li class="supHeader__link">
+                                <a href="#">Регестрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header">
+                <div class="header__wrapper container">
+                    <div class="header__leftSide">
+                        <a href="#" data-da="header__nav, first, 576" class="header__logo">FRAMES STORE</a>
+                        <nav class="header__nav">
+                            <div class="header__cross"></div>
+                            <ul class="header__navList">
+                                <li class="header__navLink">
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li class="header__navLink">
+                                    <a href="#">Мужские</a>
+                                </li>
+                                <li class="header__navLink">
+                                    <a href="#">Женские</a>
+                                </li>
+                                <li class="header__navLink">
+                                    <a href="#">Услуги</a>
+                                </li>
+                                <li class="header__navLink">
+                                    <a href="#">Доставка и оплата</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__rightSide">
+                        <div class="header__search">
+                            <form action="#">
+                                <input class="header__searchInput" type="text" placeholder="Поиск">
+                                <button class="header__searchBtn" type="submit"></button>
+                            </form>
+                        </div>
+                        <div data-da="header__leftSide, first, 576" class="header__icons">
+                            <div class="header__searchIcon greenIcon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <a href="#" class="header__wishlist greenIcon">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <div class="header__cartWrapper">
+                                <div class="header__cartContent">
+                                    <div class="header__cart greenIcon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="header__cartTitle">
+                                        <span data-da="cart__wrapper, first, 1200" class="header__cartName">Корзина</span>
+                                        <span class="header__cartNum">(0)</span>
+                                    </div>
+                                </div>
+                                <div class="cart">
+                                    <div class="cart__wrapper">
+                                        <p class="cart__empty">Корзина пуста </p>
+                                    </div>
+                                    <div class="cart__totalBody">
+                                        <div class="cart__totalWrapper">
+                                            <div class="cart__total">
+                                                <div class="cart__totalWord">Итого</div>
+                                                <div class="cart__totalNum">0 ₴</div>
+                                            </div>
+                                            <a href="#" class="cart__btn btn">Оформить заказ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartPopup">
+                <div class="cartPopup__body">
+                    <div class="cartPopup__content">
+                        <div class="cartPopup__text">
+                            ТОВАР УЖЕ ДОБАВЛЕН В КОРЗИНУ
+                        </div>
+                        <button class="cartPopup__btn btn">ОК</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slider__item slider__item--1">
+                <h2 class="slider__title">Большой выбор оправ</h2>
+            </div>
+            <div class="slider__item slider__item--2">
+                <h2 class="slider__title">Качественные европейские линзы</h2>
+            </div>
+            <div class="slider__item slider__item--3">
+                <h2 class="slider__title">Эксклюзивные брендовые оправы</h2>
+            </div>
+        </div>
+        <div class="layout container">
+            <div class="sidebar">
+                <div class="featured">
+                    <div class="featured__body">
+                        <div class="featured__slide featured__slide--1">
+                            <h2 class="featured__title">Солнечные очки</h2>
+                            <a href="#" class="featured__btn btn">Детальнее</a>
+                        </div>
+                        <div class="featured__slide featured__slide--2">
+                            <h2 class="featured__title">Скидки на растворы</h2>
+                            <a href="#" class="featured__btn btn">Детальнее</a>
+                        </div>
+                        <div class="featured__slide featured__slide--3">
+                            <h2 class="featured__title">Фирменные чехлы до -50%</h2>
+                            <a href="#" class="featured__btn btn">Детальнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-da="header__nav, 3, 992" class="mailbox">
+                    <h2 class="mailbox__title">Подпешитесь на рассылку</h2>
+                    <h3 class="mailbox__subtitle">Получайте самые свежие предложения одними из первых</h3>
+                    <form class="mailbox__form" action="#">
+                        <input class="mailbox__input" type="email" placeholder="e-mail">
+                        <button class="mailbox__btn btn" type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content__items">
+                    <h2 class="content__title">Рекомендуемые товары</h2>
+                    <div class="content__body">
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img">
+                                        <img class="content__imgMain" src="img/pics/frame-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-1-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-1-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа EA 3117 5604 55</h3>
+                                        <div class="content__price">
+                                            2799 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-2-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-2-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа DG 3295 3193 55</h3>
+                                        <div class="content__price">
+                                            3999 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-3.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-3-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-3-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа EA 3114 5563 55</h3>
+                                        <div class="content__price">
+                                            2499 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-4.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-4-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-4-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа CD DIORESSENCE20 I465216</h3>
+                                        <div class="content__price">
+                                            10999 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-5.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-5-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа GUCCI GG0441O-003 63</h3>
+                                        <div class="content__price">
+                                            8699 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-6.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-6-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-6-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа ОПРАВА GUCCI GG0348O-002 51</h3>
+                                        <div class="content__price">
+                                            5599 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-7.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-7-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-7-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа DG 3314 501 55</h3>
+                                        <div class="content__price">
+                                            6699 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-8.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-8-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа EA 3034 5649 55</h3>
+                                        <div class="content__price">
+                                            3799 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-9.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-9-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-9-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа CDU TECHNICITYO2F 8075221</h3>
+                                        <div class="content__price">
+                                            9899 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="content__items">
+                    <h2 class="content__title">Новинки</h2>
+                    <div class="content__body">
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-10.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-10-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-10-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа DG 3287 501 51</h3>
+                                        <div class="content__price">
+                                            6499 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-11.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-11-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-11-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа PR 58VV 2641O1 53</h3>
+                                        <div class="content__price">
+                                            7299 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#anchor" class="content__item">
+                            <div class="content__itemContent">
+                                <div class="content__imgSlider">
+                                    <div class="content__img ">
+                                        <img class="content__imgMain" src="img/pics/frame-12.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-12-1.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                    <div class="content__img">
+                                        <img src="img/pics/frame-12-2.jpg" alt="Оправа" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="content__info">
+                                    <div class="content__text">
+                                        <h3 class="content__itemTitle">Оправа GUCCI GG0491O-001 49</h3>
+                                        <div class="content__price">
+                                            5099 ₴
+                                        </div>
+                                    </div>
+                                    <div class="content__cartWrapper">
+                                        <div class="content__cart greenIcon">
+                                            <i class="fas fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerTop">
+                <div class="footerTop__wrapper container">
+                    <div class="footerTop__info">
+                        <div class="footerTop__wrapper">
+                            <div class="footerTop__icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                        </div>
+                        <div class="footerTop__text">
+                            Бесплатная доставка при заказах свыше 2000 ₴
+                        </div>
+                    </div>
+                    <div class="footerTop__info">
+                        <div class="footerTop__wrapper">
+                            <div class="footerTop__icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                        </div>
+                        <div class="footerTop__text">
+                            Звоните бесплатно <a href="tel:+380443711137">+38 (044) 37-111-37</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerMid">
+                <div class="footerMid__wrapper container">
+                    <div class="footerMid__contactBody">
+                        <h3 class="footerMid__title">Свяжитесь с нами</h3>
+                        <div class="footerMid__contacts">
+                            <div class="footerMid__contact">
+                                <a href="https://goo.gl/maps/BiHQyXXWxDMKHovBA">м.Київ, Майдан Незалежності, 1, второй этаж</a>
+                            </div>
+                            <div class="footerMid__contact">
+                                <a href="tel:+380443711137">+38 (044) 37-111-37</a>
+                            </div>
+                            <div class="footerMid__contact">
+                                <a href="email:framesstore@gmai.com">framesstore@gmai.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerMid__icons">
+                        <div class="footerMid__iconWrapper">
+                            <a href="#" class="footerMid__icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="footerMid__iconWrapper">
+                            <a href="#" class="footerMid__icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="footerMid__iconWrapper">
+                            <a href="#" class="footerMid__icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="footerMid__iconWrapper">
+                            <a href="#" class="footerMid__icon">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                        </div>
+                        <div class="footerMid__iconWrapper">
+                            <a href="#" class="footerMid__icon">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottom__wrapper container">
+                    <div class="footerBottom__copyrBody">
+                        <a href="#" class="footerBottom__logo">
+                            FRAMES STORE
+                        </a>
+                        <div class="footerBottom__copyr">
+                            © 2009-2020 Все права защищены
+                        </div>
+                    </div>
+                    <div class="footerBottom__nav">
+                        <ul class="footerBottom__list">
+                            <li class="footerBottom__link">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="footerBottom__link">
+                                <a href="#">Обмен и возврат</a>
+                            </li>
+                            <li class="footerBottom__link">
+                                <a href="#">Условия пользования</a>
+                            </li>
+                            <li class="footerBottom__link">
+                                <a href="#">Гарантия</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/40b45ce3fb.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/main-dist.js"></script>
+        
+    </body>
+</html>
