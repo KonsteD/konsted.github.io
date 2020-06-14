@@ -21,11 +21,11 @@
                         </div>
                         <nav class="headerTop__popUpMenu">
                             <ul class="headerTop__popUpList">
-                                <li><a href="#">Услиги</a></li>
-                                <li><a href="#">Стоимость</a></li>
-                                <li><a href="#">Портфолио</a></li>
-                                <li><a href="#">Команда</a></li>
-                                <li><a href="#">Блог</a></li>
+                                <li><a href="#serv">Услиги</a></li>
+                                <li><a href="#price">Стоимость</a></li>
+                                <li><a href="#portf">Портфолио</a></li>
+                                <li><a href="#team">Команда</a></li>
+                                <li><a href="#blog">Блог</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </section>
-            <section class="price">
+            <section id="price" class="price">
                 <div class="price__wrapper container">
                     <div class="price__info">
                         <h2 class="price__title">Расчитать стоимость</h2>
@@ -127,21 +127,21 @@
                                     <div class="price__itemBorder price__itemBorder--radio">
                                         <div class="price__formName">Выберите пакет:</div>
                                         <div class="price__radioButtons">
-                                            <div class="price__radioBtn">
-                                                <input name="pack" id="Light" type="radio" class="price__radio">
+                                            <div class="price__radioBtn price__radioBtn--L">
+                                                <input name="pack" id="Light" type="radio" checked class="price__radio">
                                                 <label for="Light" class="price__radioBtnStyle">Light</label>
                                                 <div class="price__radioInfo price__radioInfo--L">
                                                     Рабочие чертежи (развертки по стенам, план электросетей)
                                                 </div>
                                             </div>
-                                            <div class="price__radioBtn">
+                                            <div class="price__radioBtn price__radioBtn--M">
                                                 <input name="pack" id="Medium" type="radio" class="price__radio">
                                                 <label for="Medium" class="price__radioBtnStyle">Medium</label>
                                                 <div class="price__radioInfo price__radioInfo--M">
                                                     Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
                                                 </div>
                                             </div>
-                                            <div class="price__radioBtn">
+                                            <div class="price__radioBtn price__radioBtn--F">
                                                 <input name="pack" id="Full" type="radio" class="price__radio">
                                                 <label for="Full" class="price__radioBtnStyle">Full</label>
                                                 <div class="price__radioInfo price__radioInfo--F">
@@ -155,15 +155,15 @@
                                 <div class="price__result">
                                     <div class="price__resultItem">
                                         <div class="price__resultName">Площадь помещения:</div>
-                                        <div class="price__resultNum price__resultNum--output"></div><span class="price__resultNum"></span>
+                                        <div class="price__resultNum price__resultNum--output"></div>
                                     </div>
                                     <div class="price__resultItem">
                                         <div class="price__resultName">Средняя стоимость<sup>2</sup>:</div>
-                                        <div class="price__resultNum">4850 тг.</div>
+                                        <div class="price__resultNum price__resultNumPrice--output"></div>
                                     </div>
                                     <div class="price__resultItem">
                                         <div class="price__resultName">Средняя стоимость объекта:</div>
-                                        <div class="price__resultNum">48 500 тг.</div>
+                                        <div class="price__resultNum price__resultNumPriceTotal--output"></div>
                                     </div>
                                     <button class="price__resultBtn btn">Получить консультацию специалиста</button>
                                     <div class="price__phoneWrapper">
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section id="portf" class="portfolio">
                 <div class="portfolio__wrapper container">
                     <h2 class="portfolio__title">Портфолио</h2>
                     <div class="portfolio__tabs">
@@ -565,7 +565,7 @@
                     </div>
                 </div>
             </section>
-            <section class="team">
+            <section id="team" class="team">
                 <div class="team__wrapper container">
                     <h2 class="team__title">Наша команда</h2>
                     <div class="team__items">
@@ -627,7 +627,7 @@
                     </div>
                 </div>
             </section>
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="blog__wrapper container">
                     <h2 class="blog__title">Блог</h2>
                     <div class="blog__content">
