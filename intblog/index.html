@@ -2,341 +2,775 @@
 <html lang="ru">
     <head>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/news-dist.css">
-        <title>INSBLOG</title>
+        <link rel="stylesheet" href="css/index-dist.css">
+        <title>23Angles</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <script src="https://kit.fontawesome.com/40b45ce3fb.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
         <header>
-            <div class="header-top">
-                <div class="header-top__container container">
-                    <div class="header-top__row">
-                        <a href="#" class="header-top__logo">
-                            <span class="header-top__logo-title">INTBLOG</span>
-                        </a>
-                        <nav class="header-top__nav">
-                            <a href="#" class="header-top__nav-links">главная</a>
-                            <a href="#" class="header-top__nav-links">новости</a>
-                            <a href="#" class="header-top__nav-links">технологии</a>
-                            <a href="#" class="header-top__nav-links">наука</a>
-                            <a href="#" class="header-top__nav-links">дизайн</a>
-                            <a href="#" class="header-top__nav-links">разработка</a>
-                            <a href="#" class="header-top__nav-links">контакты</a>
-                            <div class="header-top__social-nav">
-                                <a href="" class="header-top__social-icons-nav"> <i class="fab fa-facebook-square"></i> </a>
-                                <a href="" class="header-top__social-icons-nav"> <i class="fab fa-twitter"></i> </a>
-                                <a href="" class="header-top__social-icons-nav"> <i class="fab fa-behance"></i> </a>
-                            </div>
+           <div class="headerTop container">
+                <a href="#" class="headerTop__logo">
+                    <img src="img/header/icons/logo.svg" alt="" class="headerTop__logoImg">
+                    <span class="headerTop__logoTitle">Angles</span>
+                </a>
+                <div class="headerTop__popUp">
+                    <div class="headerTop__popUpWrapper">
+                        <div class="headerTop__popUpHeader">
+                            <h2>МЕНЮ</h2>
+                        </div>
+                        <nav class="headerTop__popUpMenu">
+                            <ul class="headerTop__popUpList">
+                                <li><a href="#serv">Услиги</a></li>
+                                <li><a href="#price">Стоимость</a></li>
+                                <li><a href="#portf">Портфолио</a></li>
+                                <li><a href="#team">Команда</a></li>
+                                <li><a href="#blog">Блог</a></li>
+                            </ul>
                         </nav>
-                        <div class="header-top__search-slide">
-                            <form action="#" method="get" class="header-top__search-slide-box">
-                                <input class="header-top__search-slide-pannel" type="search" placeholder="Поиск">
-                                <button type="submit" class="header-top__search-slide-btn"><i class="fas fa-search"></i></button>
-                            </form>
+                    </div>
+                </div>
+                <div class="headerTop__rightSide">
+                    <div class="headerTop__burger">
+                        <span></span>
+                        <p class="headerTop__burgerName">МЕНЮ</p>
+                    </div>
+                    <div class="headerTop__phone">
+                        <img src="img/header/icons/mob.webp" alt="" class="headerTop__phoneImg">
+                        <div class="headerTop__phoneColumn">
+                            <div class="headerTop__phoneTitle">Есть вопросы? Звоните!</div>
+                            <a href="tel:+88002590936" class="headerTop__phoneNum">8 /800/ 259 09 36</a>
                         </div>
-                        <div class="header-top__social">
-                            <a href="" class="header-top__social-icons"> 
-                                <i class="fab fa-facebook-square"></i> 
-                            </a>
-                            <a href="" class="header-top__social-icons"> 
-                                <i class="fab fa-twitter"></i> 
-                            </a>
-                            <a href="" class="header-top__social-icons"> 
-                                <i class="fab fa-behance"></i> 
-                            </a>
-                        </div>
-                        <form action="#" method="get" class="header-top__search-box">
-                            <input class="header-top__search-pannel" type="search" placeholder="Search">
-                            <button type="submit" class="header-top__search-btn"><i class="fas fa-search"></i></button>
-                        </form>
-                        <div class="header-top__burger">
-                            <span></span>
-                        </div>
-                        <div class="header-top__search-open-btn"><i class="fas fa-search"></i></div>
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
-                <div class="header-bottom__container container">
-                    <div class="header-bottom__column">
-                        <h1 class="header-bottom__title">НОВОСТИ</h1>
-                    </div>
+            <div class="headerBottom container">
+                <div class="headerBottom__intro">
+                    <h1 class="headerBottom__title">Услиги по 3D моделированию</h1>
+                    <h2 class="headerBottom__subtitle">полный спектр услуг</h2>
+                    <p class="headerBottom__text">Оставьте заявку сейчас и получите дизайн интерьера 25кв<sup>2</sup> бесплатно!*</p>
                 </div>
+                <div class="headerBottom__form">
+                    <form action="#" method="get">
+                        <div class="headerBottom__inputsList">
+                            <input type="text" placeholder="Ваше имя" class="headerBottom__input">
+                            <input type="email" placeholder="E-mail" class="headerBottom__input">
+                            <input type="tel" placeholder="Номер телефона" class="headerBottom__input">
+                        </div>
+                        <button class="headerBottom__button btn">Оставить заявку!</button>
+                    </form>
+                    <div class="headerBottom__formSubtitle">*Мы гарантируем конфидициальность передаваемых данных</div>
+                </div>
+                <a class="headerBottom__scroll" href="#serv"><img src="img/header/icons/scroll.svg" alt=""></a>
             </div>
         </header>
         <div class="layout">
-            <div class="layout__container container">
-                <section class="sidebar">
-                    <div class="sidebar__items">
-                        <form action="#" method="get" class="sidebar__search-box">
-                            <input class="sidebar__search-pannel" type="search" placeholder="Поиск">
-                            <button type="submit" class="sidebar__search-btn"><i class="fas fa-search"></i></button>
-                        </form>
-                        <section class="sidebar__lposts">
-                            <div class="sidebar__lposts-items">
-                                <h2>Последние посты</h2>
-                                <div class="sidebar__lposts-columns">
-                                    <article class="sidebar__lpost">
-                                        <a href="#" class="sidebar__lpost-link">
-                                            <div class="sidebar__first ">
-                                                <img src="img/aside-pic/1.jpg" alt="post-pic">
-                                            </div>
-                                            <div class="sidebar__lpost-text">
-                                                <h3>Нил Деграсс Тайсон — Размышления астрофизика</h3>
-                                                <p>Хотим поделиться новой озвучкой старого выступления...</p>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article class="sidebar__lpost">
-                                        <a href="#" class="sidebar__lpost-link">
-                                            <div class="sidebar__first ">
-                                                <img src="img/aside-pic/2.jpg" alt="post-pic">
-                                            </div>
-                                            <div class="sidebar__lpost-text">
-                                                <h3>Лонгрид: Europa Clipper. Самая амбициозная...</h3>
-                                                <p>Единственная известная нам жизнь находится на Земле</p>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article class="sidebar__lpost">
-                                        <a href="#" class="sidebar__lpost-link">
-                                            <div class="sidebar__first ">
-                                                <img src="img/aside-pic/3.jpg" alt="post-pic">
-                                            </div>
-                                            <div class="sidebar__lpost-text">
-                                                <h3>Учёные: в последние годы Солнце было менее...</h3>
-                                                <p>Астрономы из Института Макса Планка обнаружили...</p>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article class="sidebar__lpost">
-                                        <a href="#" class="sidebar__lpost-link">
-                                            <div class="sidebar__first ">
-                                                <img src="img/aside-pic/4.jpg" alt="post-pic">
-                                            </div>
-                                            <div class="sidebar__lpost-text">
-                                                <h3>Как мы нашли сверхмассивную чёрную дыру...</h3>
-                                                <p>Сверхмассивная чёрная дыра Стрелец А* в центре нашей...</p>
-                                            </div>
-                                        </a>
-                                    </article>
-                                    <article class="sidebar__lpost">
-                                        <a href="#" class="sidebar__lpost-link">
-                                            <div class="sidebar__first ">
-                                                <img src="img/aside-pic/5.jpg" alt="post-pic">
-                                            </div>
-                                            <div class="sidebar__lpost-text">
-                                                <h3>Flipper Zero — Тамагочи для хакеров</h3>
-                                                <p>Flipper Zero — проект карманного мультитула для хакеров...</p>
-                                            </div>
-                                        </a>
-                                    </article>
+            <section id="serv" class="services">
+                <div class="services__wrapper container">
+                    <h2 class="services__title">Наши услуги</h2>
+                    <div class="services__content">
+                        <div class="services__item">
+                            <div class="services__itemInfo">
+                                <h3 class="services__itemTitle">Дизайн интерьера</h3>
+                                <div class="services__itemText">
+                                    Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение 
+                                    у человека при нахождении в помещении.
                                 </div>
+                                <a href="#" class="services__btn btn">Оставить заявку</a>
                             </div>
-                        </section>
-                    </div>
-                </section>
-                <section class="content">
-                    <div class="content__articles-list">
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/1.jpg" alt="image-1">
-                                </div>
-                                <h2>Как работает Face ID в iPhone X: алгоритм на Python</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-22">22 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Изображение лица пользователя снимают с помощью инфракрасной камеры, которая более устойчива к изменениям света и цвета окружающей среды. 
-                                        Используя глубокое обучение, смартфон способен распознать лицо пользователя в мельчайших деталях, тем самым «узнавая» владельца каждый раз, 
-                                        когда тот подхватывает свой телефон.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
+                            <div class="services__img ibg">
+                                <img src="img/pics/serv-1.webp" alt="Дизайн интерьера" loading="lazy">
                             </div>
-                        </article>
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/2.jpg" alt="image-1">
-                                </div>
-                                <h2>Ученые выяснили, что рыбы могут впадать в отчаяние. Теперь на них будут проверять антидепрессанты</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-22">22 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Ученые из Уральского федерального университета, Санкт-Петербургского государственного университета (СПбГУ) и Национального медицинского 
-                                        исследовательского центра им. Алмазова (НМИЦ, Санкт-Петербург) обнаружили у пресноводных рыбок данио-рерио феномен отчаяния. 
-                                        Также им удалось выяснить, что депрессия — более древний механизм, чем считалось до сих пор.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
-                            </div>
-                        </article>
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/3.jpg" alt="image-1">
-                                </div>
-                                <h2>Астрономы обнаружили экзопланету, на которой идёт дождь из жидкого металла</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-23">23 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Исследователи из Университета Женевы обнаружили экзопланету, на которой идут дожди из расплавленного железа. Планета WASP-76b находится 
-                                        в 640 световых годах от Земли, а условия на её поверхности считаются экстремальными. Об этом говорится на сайте Европейской южной обсерватории.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
-                            </div>
-                        </article>
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/4.jpg" alt="image-1">
-                                </div>
-                                <h2>Новозеландские ученые доказали: Попугаи умеют оценивать шансы на успех</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-24">24 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Для этого был проведен эксперимент (ни одно животное в ходе эксперимента не пострадало): прозрачные коробки заполнялись определённым количеством 
-                                        «счастливых» чёрных и «несчастливых» разноцветных палочек. Ученые вытаскивали их из контейнеров, держа в закрытой руке, а новозеландские кеа 
-                                        (Nestor notabilis) должны были угадать, в какой руке находится чёрная палочка. Если попугаи справлялись с задачей, то они получали еду.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
-                            </div>
-                        </article>
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/5.jpg" alt="image-1">
-                                </div>
-                                <h2>Житель Германии обнаружил на заднем дворе метеорит. Учёные узнали возраст болида — 4,5 миллиарда лет</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-25">25 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Метеориту оказалось почти столько же времени, сколько всей Солнечной системе. После вхождения в атмосферу сохранился лишь небольшой осколок 
-                                        метеорита весом 24,5 грамма, который проанализировали с помощью электронного микроскопа. Как выяснилось, болид представляет собой углеродистый 
-                                        хондрит: считается, что именно из него сформировались планетеземали на раннем этапе развития Солнечной системы.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
-                            </div>
-                        </article>
-                        <article class="content__article">
-                            <div class="content__article-columns">
-                                <div class="content__article-image ">
-                                    <img src="img/content-pic/6.jpg" alt="image-1">
-                                </div>
-                                <h2>Ученые воскресили гены последних мамонтов</h2>
-                                <div class="content__article-subtitle">
-                                    <time pubdate datetime="2020-01-24">24 Января 2020</time>
-                                </div>
-                                <div class="content__article-text">
-                                    <p>
-                                        Исследование подтвердило, что последняя популяция мамонтов, обитавшая на острове Врангеля, страдала от накопления вредоносных мутаций. В частности, 
-                                        животные частично утратили способность к обонянию, у них плохо работала инсулиновая система, страдала мужская фертильность. Первопричиной всех этих 
-                                        изменений и в конечном счете гибели популяции стала немногочисленность этой группы — они вымерли из-за близкородственных скрещиваний.
-                                    </p>
-                                </div>
-                                <a href="#" class="content__article-btn">Читать дальше</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="content__page-list-wrapper">
-                        <div class="content__page-list">
-                            <a href="#" class="content__page-number">1</a>
-                            <a href="#" class="content__page-number">2</a>
-                            <a href="#" class="content__page-number">3</a>
-                            <a href="#" class="content__page-number">
-                                <i class="fas fa-angle-right"></i>
-                            </a>
                         </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <footer>
-            <div class="footer container">
-                <div class="footer__wrapper">
-                    <div class="footer__logo">
-                        <span class="footer__logo-text">INTBLOG</span>
-                    </div>
-                    <div class="footer__body">
-                            <div class="footer__form">
-                                <form action="#" method="get">
-                                    <div class="footer__form-line">
-                                        <input type="text" placeholder="Имя">
-                                        <input type="email" placeholder="E-mail">
-                                    </div>
-                                    <div class="footer__form-line">
-                                        <input type="tel" placeholder="Телефон">
-                                        <input type="url" placeholder="Веб-сайт">
-                                    </div>
-                                    <div class="footer__form-text">
-                                        <textarea name="text" placeholder="Сообщение"></textarea>
-                                    </div>
-                                    <button class="footer__form-btn">Отправить</button>
-                                </form>
+                        <div class="services__item">
+                            <div class="services__img ibg">
+                                <img src="img/pics/serv-2.webp" alt="Дизайн экстерьера" loading="lazy">
                             </div>
-                        <div class="footer__info one">
-                            <div class="footer__spoiler footer__spoiler--none">
-                                <span class="footer__title">ОСТАВЬТЕ СООБЩЕНИЕ</span>
-                                <div class="footer__spoiler-text">
-                                    <form action="#" method="get">
-                                        <div class="footer__form-line-spoiler">
-                                            <input type="text" placeholder="Имя">
-                                            <input type="email" placeholder="E-mail">
-                                        </div>
-                                        <div class="footer__form-line-spoiler">
-                                            <input type="tel" placeholder="Номер телефона">
-                                            <input type="url" placeholder="Веб-сайт">
-                                        </div>
-                                        <div class="footer__form-text-spoiler">
-                                            <textarea name="text" placeholder="Сообщение"></textarea>
-                                        </div>
-                                        <button class="footer__form-btn-spoiler">Отправить</button>
-                                    </form>
+                            <div class="services__itemInfo">
+                                <h3 class="services__itemTitle">Дизайн экстерьера</h3>
+                                <div class="services__itemText">
+                                    Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить 
+                                    удобство людей при нахождении на территории.
                                 </div>
                             </div>
-                            <div class="footer__spoiler footer__spoiler--bold">
-                                <span class="footer__title">КоНТАКТЫ</span>
-                                <div class="footer__spoiler-text">
-                                    <p>
-                                        <a href="mailto:intblog@gmail.com">E-mail: intblog@gmail.com</a> <br>
-                                    </p>
-                                    <div class="footer__social-spoiler">
-                                        <a href="#" class="footer__social-icon-spoiler"> <i class="fab fa-facebook-square"></i> </a>
-                                        <a href="#" class="footer__social-icon-spoiler"> <i class="fab fa-twitter"></i> </a>
-                                        <a href="#" class="footer__social-icon-spoiler"> <i class="fab fa-behance"></i> </a>
-                                    </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__itemInfo">
+                                <h3 class="services__itemTitle">Визуализация</h3>
+                                <div class="services__itemText">
+                                    Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить 
+                                    удобство людей при нахождении на территории.
                                 </div>
                             </div>
-                            <div class="footer__social">
-                                <a href="#" class="footer__social-icon"> <i class="fab fa-facebook-square"></i> </a>
-                                <a href="#" class="footer__social-icon"> <i class="fab fa-twitter"></i> </a>
-                                <a href="#" class="footer__social-icon"> <i class="fab fa-behance"></i> </a>
+                            <div class="services__img ibg">
+                                <img src="img/pics/serv-3.webp" alt="Визуализация" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom">
-                    <p>© INTBLOG 2016-2020 Все права защищены</p>
+            </section>
+            <section id="price" class="price">
+                <div class="price__wrapper container">
+                    <div class="price__info">
+                        <h2 class="price__title">Расчитать стоимость</h2>
+                        <h3 class="price__text">Расчитайте предварительную стоимость разработки интерьера</h3>
+                    </div>
+                    <div class="price__form">
+                        <form action="#" method="get">
+                            <div class="price__columns">
+                                <div class="price__choose">
+                                    <div class="price__itemBorder price__itemBorder--slider">
+                                        <div class="price__formName">Площадь помещения:</div>
+                                        <div class="price__sliderM2"></div>
+                                        <div class="price__sliderM2--mobile"></div>
+                                    </div>
+                                    <div class="price__itemBorder price__itemBorder--radio">
+                                        <div class="price__formName">Выберите пакет:</div>
+                                        <div class="price__radioButtons">
+                                            <div class="price__radioBtn price__radioBtn--L">
+                                                <input name="pack" id="Light" type="radio" checked class="price__radio">
+                                                <label for="Light" class="price__radioBtnStyle">Light</label>
+                                                <div class="price__radioInfo price__radioInfo--L">
+                                                    Рабочие чертежи (развертки по стенам, план электросетей)
+                                                </div>
+                                            </div>
+                                            <div class="price__radioBtn price__radioBtn--M">
+                                                <input name="pack" id="Medium" type="radio" class="price__radio">
+                                                <label for="Medium" class="price__radioBtnStyle">Medium</label>
+                                                <div class="price__radioInfo price__radioInfo--M">
+                                                    Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                                                </div>
+                                            </div>
+                                            <div class="price__radioBtn price__radioBtn--F">
+                                                <input name="pack" id="Full" type="radio" class="price__radio">
+                                                <label for="Full" class="price__radioBtnStyle">Full</label>
+                                                <div class="price__radioInfo price__radioInfo--F">
+                                                    План расстановки мебели 3D визуализация. 
+                                                    Все рабочие чертежи (план полов, план потолка, развертки по стенам, план электросетей)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price__result">
+                                    <div class="price__resultItem">
+                                        <div class="price__resultName">Площадь помещения:</div>
+                                        <div class="price__resultNum price__resultNum--output"></div>
+                                    </div>
+                                    <div class="price__resultItem">
+                                        <div class="price__resultName">Средняя стоимость<sup>2</sup>:</div>
+                                        <div class="price__resultNum price__resultNumPrice--output"></div>
+                                    </div>
+                                    <div class="price__resultItem">
+                                        <div class="price__resultName">Средняя стоимость объекта:</div>
+                                        <div class="price__resultNum price__resultNumPriceTotal--output"></div>
+                                    </div>
+                                    <button class="price__resultBtn btn">Получить консультацию специалиста</button>
+                                    <div class="price__phoneWrapper">
+                                        <p>или позвоните нам по телефону:</p>
+                                        <a href="tel:+77273887177">+ 7 727 388 71 77</a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="portf" class="portfolio">
+                <div class="portfolio__wrapper container">
+                    <h2 class="portfolio__title">Портфолио</h2>
+                    <div class="portfolio__tabs">
+                        <nav class="portfolio__tabsLinks">
+                            <div data-tab-name="portfolio__tabsBlock-1" class="portfolio__tabsLink active">все проекты</div>
+                            <div data-tab-name="portfolio__tabsBlock-2" class="portfolio__tabsLink">экстерьеры</div>
+                            <div data-tab-name="portfolio__tabsBlock-3" class="portfolio__tabsLink">жилые интерьеры</div>
+                            <div data-tab-name="portfolio__tabsBlock-4" class="portfolio__tabsLink">общественные интерьеры</div>
+                        </nav>
+                        <div class="portfolio__tabsBody">
+                            <div class="portfolio__tabsBlock portfolio__tabsBlock-1 active">
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-2.webp" alt="Пример #1" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-1.webp" alt="Пример #2" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-4.webp" alt="Пример #3" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-6.webp" alt="Пример #4" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-2.webp" alt="Пример #5" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-6.webp" alt="Пример #6" loading="lazy">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="portfolio__tabsBlock portfolio__tabsBlock-2">
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-1.webp" alt="Пример экстерьера #1" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-2.webp" alt="Пример экстерьера #2" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-3.webp" alt="Пример экстерьера #3" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-4.webp" alt="Пример экстерьера #4" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-5.webp" alt="Пример экстерьера #5" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port1-6.webp" alt="Пример экстерьера #6" loading="lazy">
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="portfolio__tabsBlock portfolio__tabsBlock-3">
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-1.webp" alt="Пример интерьера #1" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-2.webp" alt="Пример интерьера #2" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-3.webp" alt="Пример интерьера #3" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-4.webp" alt="Пример интерьера #4" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-5.webp" alt="Пример интерьера #5" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port2-6.webp" alt="Пример интерьера #6" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__tabsBlock portfolio__tabsBlock-4">
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-1.webp" alt="Пример интерьера #1" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-2.webp" alt="Пример интерьера #2" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-3.webp" alt="Пример интерьера #3" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-4.webp" alt="Пример интерьера #4" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-5.webp" alt="Пример интерьера #5" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="portfolio__imgWrapper">
+                                    <div class="portfolio__img ibg">
+                                        <img src="img/pics/port3-6.webp" alt="Пример интерьера #6" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why">
+                <div class="why__wrapper container">
+                    <h2 class="why__title">Почему мы лучшие?</h2>
+                    <div class="why__content">
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-1.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы
+                            </div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-2.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Интеративный подход, работаем до полного согласования с Вами
+                            </div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-3.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)
+                            </div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-4.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Над проектом работает группа специалистов под началом project менеджера в ERP системе
+                            </div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-5.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Выполнение раньше установленных сроков
+                            </div>
+                        </div>
+                        <div class="why__item">
+                            <div class="why__itemHeader">
+                                <img src="img/icons/why-6.svg" alt="icon" class="why__itemIcon">
+                            </div>
+                            <div class="why__itemText">
+                                Дарим альбом проекта, вместе с 25% скидкой на следующее обращение
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="interact">
+                <div class="interact__wrapper container">
+                    <h2 class="interact__title">Процесс взаимодействия</h2>
+                    <div class="interact__content">
+                        <div class="interact__row">
+                            <div class="interact__img ibg">
+                                <img src="img/pics/inter-1.webp" alt="Заполнение брифа" loading="lazy">
+                            </div>
+                            <div class="interact__name">Заполнение брифа</div>
+                        </div>
+                        <div class="interact__row">
+                            <div class="interact__img ibg">
+                                <img src="img/pics/inter-2.webp" alt="Исследование" loading="lazy">
+                            </div>
+                            <div class="interact__name">Исследование</div>
+                        </div>
+                        <div class="interact__row">
+                            <div class="interact__img ibg">
+                                <img src="img/pics/inter-3.webp" alt="Идея" loading="lazy">
+                            </div>
+                            <div class="interact__name">Идея</div>
+                        </div>
+                        <div class="interact__row">
+                            <div class="interact__img ibg">
+                                <img src="img/pics/inter-4.webp" alt="Завершение" loading="lazy">
+                            </div>
+                            <div class="interact__name">Завершение</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="companys">
+                <div class="companys__wrapper container">
+                    <h2 class="companys__title">Нам доверяют более 50 компаний</h2>
+                    <div class="companys__slider">
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-5.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-6.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-1.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-2.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-3.webp" alt="" loading="lazy">
+                        </div>
+                        <div class="companys__logo">
+                            <img src="img/icons/comp-4.webp" alt="" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="companys__action">
+                        <input class="companys__sliderRange" type="range" min="1" max="50"  value="0" step="1">
+                    </div>
+                </div>
+            </section>
+            <section id="team" class="team">
+                <div class="team__wrapper container">
+                    <h2 class="team__title">Наша команда</h2>
+                    <div class="team__items">
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-1.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Ирина Притыкина</div>
+                            <div class="team__pos">Директор компании</div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-2.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Игорь Карий</div>
+                            <div class="team__pos">Финансовый директор</div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-3.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Илья Кондрашин</div>
+                            <div class="team__pos">Инженер модельер</div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-4.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Маргарита Гордеева</div>
+                            <div class="team__pos">3D дизайнер</div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-5.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Светлана Коток</div>
+                            <div class="team__pos">Дизайнер интерьеров</div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__img ibg">
+                                <img src="img/pics/team-6.webp" alt="avatar" loading="lazy">
+                            </div>
+                            <div class="team__name">Максим Ковальский</div>
+                            <div class="team__pos">Дизайнер ландшафтов</div>
+                        </div>
+                    </div>
+                    <div class="team__quote">
+                        <blockquote class="team__quoteBody">
+                            <h3 class="team__quoteTitle">Ты - то, что ты делаешь!</h3>
+                            <p class="team__quoteText">
+                                То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. 
+                                Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.
+                            </p>
+                            <cite class="team__quoteCite">
+                                <p class="team__quoteAutor">Ислам Куаныш</p>
+                                <p class="team__quoteAutorPos">Директор</p>
+                            </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+            <section id="blog" class="blog">
+                <div class="blog__wrapper container">
+                    <h2 class="blog__title">Блог</h2>
+                    <div class="blog__content">
+                        <a href="#" class="blog__article">
+                            <div class="blog__imgWrapper">
+                                <div class="blog__img ibg">
+                                    <img src="img/pics/blog-1.webp" alt="Минималистичный интерьер" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="blog__name">
+                                Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров
+                            </div>
+                        </a>
+                        <a href="#" class="blog__article">
+                            <div class="blog__imgWrapper">
+                                <div class="blog__img ibg">
+                                    <img src="img/pics/blog-2.webp" alt="Прованс" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="blog__name">
+                                Прованс - это спокойный южный регион Франции, с великолепнейшей природой
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="questions__wrapper container">
+                    <h2 class="questions__title">Остались вопросы?</h2>
+                    <h3 class="questions__subtitle">Задайте их в форме ниже и наши специалисты свяжуться с Вами!</h3>
+                    <div class="questions__content">
+                        <div class="questions__form">
+                            <form action="#">
+                                <div class="questions__inputs">
+                                    <input class="questions__input" type="text" placeholder="Ваше имя">
+                                    <input class="questions__input" type="email" placeholder="Ваш e-mail">
+                                    <input class="questions__input" type="tel" placeholder="Ваш номер телофона">
+                                </div>
+                                <div class="questions__textarea">
+                                    <textarea name="text" placeholder="Ваше сообщение"></textarea>
+                                </div>
+                                <button class="questions__btn btn">Оставить заявку!</button>
+                            </form>
+                        </div>
+                        <div class="questions__contacts">
+                            <div class="questions__contactsNums">
+                                <a href="tel:+78968766677" class="questions__contactsItem">
+                                    <div class="questions__icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="questions__contactName">
+                                        + 7 896 876 66 77
+                                    </div>
+                                </a>
+                                <a href="tel:+78968766677" class="questions__contactsItem">
+                                    <div class="questions__icon">
+                                        <i class="fab fa-viber"></i>
+                                    </div>
+                                    <div class="questions__contactName">
+                                        + 7 896 876 66 77
+                                    </div>
+                                </a>
+                                <a href="email:sales@23angles.kz" class="questions__contactsItem">
+                                    <div class="questions__icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="questions__contactName">
+                                        sales@23angles.kz
+                                    </div>
+                                </a>
+                                <a href="skype:23angles" class="questions__contactsItem">
+                                    <div class="questions__icon">
+                                        <i class="fab fa-skype"></i>
+                                    </div>
+                                    <div class="questions__contactName">
+                                        skype: 23angles
+                                    </div>
+                                </a>
+                                <a href="#" class="questions__contactsItem">
+                                    <div class="questions__icon">
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </div>
+                                    <div class="questions__contactName">
+                                        telegram: 23angles
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="questions__time">
+                                График работы: с 9-00 до 18-00. Пн.-Пт.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.024121046598!2d30.36156023972572!3d59.930717693017975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4b9140081%3A0xa2b81c3f69e8677d!2z0J3QtdCy0YHQutC40Lkg0KbQtdC90YLRgA!5e0!3m2!1sru!2sua!4v1591025306881!5m2!1sru!2sua" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__upper">
+                    <nav class="footer__nav">
+                        <a href="#" class="footer__link">Главная</a>
+                        <a href="#" class="footer__link">Тарифы</a>
+                        <a href="#" class="footer__link">Вопросы-ответы</a>
+                        <a href="#" class="footer__link">Личный кабинет</a>
+                        <a href="#" class="footer__link">Новости</a>
+                        <a href="#" class="footer__link">Договор публичной оферты</a>
+                    </nav>
+                    <div class="footer__social">
+                        <div class="footer__socialTitle">Мы в социальных сетях:</div>
+                        <div class="footer__socialIcons">
+                            <a href="#" class="footer__socialIcon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="footer__socialIcon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="footer__socialIcon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <p>© Kazteleport, 2015. Все права защищены</p>
+                    <div class="footer__medals">
+                        <p>
+                            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                <img style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                    alt="Правильный CSS!" />
+                            </a>
+                        </p>
+                        <p>
+                            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                <img style="border:0;width:88px;height:31px"
+                                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                    alt="Правильный CSS!" />
+                            </a>
+                        </p> 
+                    </div>
+                                           
                 </div>
             </div>
         </footer>
-        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/40b45ce3fb.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
         <script src="js/main-dist.js"></script>
     </body>
 </html>
