@@ -8,6 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     </head>
     <body>
+        <div class="scrollUp hoverable blend">
+            <svg class="scrollUp__svg" viewBox='-2 -2 52 52'>
+                <path 
+                    class="scrollUp__path"
+                    d='
+                        M24,0
+                        a24,24 0 0,1 0,48
+                        a24,24 0 0,1 0,-48
+                    '
+                />
+            </svg>
+        </div>
         <div class="cursor">
             <div class="cursor__ball"></div>
         </div>
@@ -23,7 +35,7 @@
         </div>
         <header class="header">
             <div class="header__wrapper container">
-                <a href="#" class="header__logo hoverable blend">
+                <a href="https://konsted.github.io/" class="header__logo hoverable blend">
                     <div class="header__logoTitle">KD</div>
                 </a>
                 <div data-aos="fade-down" data-aos-duration="700" data-aos-delay="0" class="header__burger hoverable blend">
@@ -168,8 +180,8 @@
             </div>
         </footer>
         <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="js/main-dist.js"></script>
-        <!-- <script src="js/aos.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="js/aos.js"></script>
         <script src="js/preload.js"></script>
         <script src="js/animation.js"></script>
         <script src="js/burger.js"></script>
@@ -192,6 +204,6 @@
                 startDelay: 3100,
                 showCursor: false,
             });
-        </script> -->
+        </script>
     </body>
 </html>
