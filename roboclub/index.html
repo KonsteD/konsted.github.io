@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/index-min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Робоклуб</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script src="https://kit.fontawesome.com/40b45ce3fb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="darkBackground"></div>
+        <header class="header">
+            <div class="header__wrapper containerH">
+                <a href="#" class="header__logo">
+                    <img class="header__logoImg" src="img/icons/logo.png" alt="logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__navList">
+                        <li class="header__navItem">
+                            <a href="#" class="header__navItemLink">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a href="#" class="header__navItemLink">
+                                FAQ
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a href="#" class="header__navItemLink">
+                                Поддержка
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a href="#" class="header__navItemLink">
+                                Гарантия
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a href="#" class="header__navItemLink">
+                                Оплата
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:+0001000700" class="header__phoneBtn" data-da="header__nav, last, 576">
+                    (---) 1000-700
+                </a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </header>
+        <div class="layout">
+            <div class="darkBackground"></div>
+            <section class="intro">
+                <div class="intro__wrapper container introCont">
+                    <div class="intro__info">
+                        <img src="img/icons/Misto_logo.svg" alt="Misto_logo" class="intro__logo">
+                        <h1 class="intro__title">
+                            запиши ребенка в робоклуб!
+                        </h1>
+                        <p class="intro__subtitle">
+                            современное IT образование для детей от 5 до 16 лет
+                        </p>
+                        <div class="intro__logos">
+                            <img src="img/icons/Python-logo.svg" alt="Python_logo" class="intro__logosItem">
+                            <img src="img/icons/arduino.svg" alt="Arduino_logo" class="intro__logosItem">
+                            <img src="img/icons/scratch.svg" alt="Scratch_logo" class="intro__logosItem">
+                            <img src="img/icons/wedo.svg" alt="Wedo_logo" class="intro__logosItem">
+                        </div>
+                        <button class="intro__btn btn popupOpen">
+                            подать заявку
+                        </button>
+                    </div>
+                    <div class="intro__pics">
+                        <img src="img/pics/boy.png" alt="Boy" class="intro__picsItem">
+                        <img src="img/pics/girl.png" alt="Girl" class="intro__picsItem">
+                        <img src="img/pics/slon.png" alt="Elephant" data-speed='2' class="intro__picsItem">
+                        <img src="img/pics/balls.png" data-speed='2' alt="Balls" class="intro__picsItem layer">
+                    </div>
+                </div>
+                <div class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content popupWindow">
+                            <button class="popup__close"></button>
+                            <form name="feedback" class="popup__feedback">
+                                <input type="text" name="name" class="popup__input input" placeholder="ваше имя" required>
+                                <input type="tel" name="phone" id="phone-mask" class="popup__input input" required>
+                            </form>
+                            <div class="popup__warn">
+                                <img class="popup__warnImg" src="img/icons/dino.svg" alt="Dino" loading='lazy'>
+                                <span class="popup__warnInfo">поле не может быть пустым</span>
+                            </div>
+                            <button class="popup__btn btn">
+                                подать заявку
+                            </button>
+                        </div>
+                        <div class="popup__accepted popupWindow">
+                            <button class="popup__close"></button>
+                            <div class="popup__column">
+                                <img src="img/icons/accepted.svg" alt="Check mark" class="popup__check" loading='lazy'>
+                                <div class="popup__acceptedInfo">
+                                    <div class="popup__acceptedTitle">
+                                        заявка принята
+                                    </div>
+                                    <div class="popup__acceptedSubtitle">
+                                        С вами свяжутся в течение суток
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="courses">
+                <div class="courses__wrapper container">
+                    <h2 class="courses__title">IT КУРСЫ</h2>
+                    <h4 class="courses__subtitle">онлайн/оффлайн</h4>
+                    <div class="courses__slider">
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader">
+                                <h3>3d моделирование</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">дети 10 - 15 лет</span>
+                                    <img src="img/icons/wheel.svg" alt="Wheel" class="courses__itemImg courses__itemImg--1">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <p>Создание 3д моделей от простых до сложных.</p>
+                                    <p>Курс помогает освоть геометрию, образное мышление и получить  востребованную профессию.</p>
+                                    <p>3 уровня сложности, сертификаты по окончанию.</p>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">1 год</span>
+                                    <span class="courses__itemPrice">800 <span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader">
+                                <h3>робототехника</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">дети 7 - 14 лет</span>
+                                    <img src="img/icons/robohand.png" alt="Robohand" class="courses__itemImg courses__itemImg--2">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <p>Робототехника для самых маленьких</p>
+                                    <ul class="courses__itemList">
+                                        <li>WeDo 2.0</li>
+                                        <li>SCRATCH</li>
+                                        <li>3D моделирование и печать</li>
+                                        <li>Arduino</li>
+                                        <li>MINDSTORM</li>
+                                    </ul>
+                                    <p>4 уровня сложности</p>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">1 год</span>
+                                    <span class="courses__itemPrice">750 <span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader">
+                                <h3>программирование it-логика</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">дети 7 - 9 лет</span>
+                                    <img src="img/icons/lamp.svg" alt="Lamp" class="courses__itemImg courses__itemImg--3">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <p>Азы программирования для самых маленьких</p>
+                                    <p>Введение в мир IT</p>
+                                    <ul class="courses__itemList">
+                                        <li>SCRATCH</li>
+                                        <li>IT-логика</li>
+                                    </ul>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">1 год</span>
+                                    <span class="courses__itemPrice">450 <span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader">
+                                <h3>программирование для старших</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">дети 10 - 15 лет</span>
+                                    <img src="img/icons/pc.svg" alt="PC" class="courses__itemImg courses__itemImg--4">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <ul class="courses__itemList">
+                                        <li>HTML</li>
+                                        <li>PYTHON</li>
+                                        <li>Javascript</li>
+                                        <li>Создание игр в CONSTRUCT</li>
+                                    </ul>
+                                    <p>Дети научаться создавать свои компьютерные игры, писать сайты, делать проекты и получат первые азы в востребованной профессии</p>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">1 год</span>
+                                    <span class="courses__itemPrice">700 <span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader">
+                                <h3>Интелект JR</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">дети 5-6 лет</span>
+                                    <img src="img/icons/brain.svg" alt="Brain" class="courses__itemImg courses__itemImg--5">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <p>Комплексные курсы развития детей:</p>
+                                    <ul class="courses__itemList">
+                                        <li>В программе упражнения на развитие логики, внимания,памяти.</li>
+                                        <li>Методики для быстрого запоминания  информации</li>
+                                        <li>IT- логика</li>
+                                        <li>Аазы программирования и робототехники</li>
+                                    </ul>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">1 год</span>
+                                    <span class="courses__itemPrice">350 <span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                        <div class="courses__sliderItem">
+                            <div class="courses__itemHeader courses__itemHeader--last">
+                                <h3>университет третьего поколения</h3>
+                                <div class="courses__itemColumn">
+                                    <span class="courses__itemAge">для взрослых</span>
+                                    <img src="img/icons/grandma.svg" alt="Grandma" class="courses__itemImg courses__itemImg--6">
+                                </div>
+                            </div>
+                            <div class="courses__itemBody">
+                                <div class="courses__itemInfo">
+                                    <ul class="courses__itemList">
+                                        <li>Работа с Microsoft Office и Google диск</li>
+                                        <li>Электронная почта</li>
+                                        <li>Интернет-банкинг</li>
+                                        <li>Viber, WhatsApp, Telegram</li>
+                                        <li>Социальные сети, YouTube, страницы новостей</li>
+                                        <li>Работа со смартфонами</li>
+                                    </ul>
+                                </div>
+                                <div class="courses__ItemConditions">
+                                    <span class="courses__itemHours smallText">2 месяца</span>
+                                    <span class="courses__itemPrice">0<span>грн/мес</span></span>
+                                </div>
+                                <button class="courses__itemBtn">выбрать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recruit">
+                <div class="recruit__wrapper container">
+                    <div class="recruit__header">
+                        <div class="recruit__name">
+                            <h2 class="recruit__title">набор открыт!</h2>
+                            <h4 class="recruit__subtitle">хотите узнать как проходят наши уроки?</h4>
+                        </div>
+                        <div class="recruit__social">
+                            <a href="#" class="recruit__socialIcon socialIcon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="recruit__socialIcon socialIcon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="recruit__socialIcon socialIcon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="recruit__main">
+                        <div class="recruit__video">
+                            <iframe src="https://www.youtube.com/embed/3a-Njo4pWbk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading='lazy'></iframe>
+                        </div>
+                        <div class="recruit__listWrapper">
+                            <ul class="recruit__list">
+                                <li class="recruit__listItem">Игровая форма обучения</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Полная творческая свобода</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Участие в робобатлах</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Высококвалифицированные преподаватели  </li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Уютные и комфортные классы</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Современная компьютерная техника</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem">Группы по 8-10 человек</li>
+                                <div class="recruit__listItemBetween"></div>
+                                <li class="recruit__listItem"> Удобное расписание</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="recruit__bottom">
+                        <div class="recruit__sub">
+                            <span class="recruit__bonus">бонус</span>
+                            <h2 class="recruit__bottomTitle">получите бесплатное занятие!</h2>
+                            <form action="" class="recruit__form">
+                                <input type="tel" name="phone" id="phone-mask1" class="recruit__input input" required>
+                                <button class="recruit__btn btn">
+                                    записаться
+                                </button>
+                            </form>
+                        </div>
+                        <img src="img/pics/dog.png" alt="dog" class="recruit__img">
+                    </div>
+                </div>
+            </section>
+            <section class="education">
+                <div class="education__wrapper container">
+                    <img src="img/pics/yblock.svg" alt="Yellow block" class="education__yBlock">
+                    <div class="education__body">
+                        <h2 class="education__title">мы развиваем:</h2>
+                        <div class="education__items">
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/1.svg" alt="First" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">ОБСТОЯТЕЛЬНОСТЬ</h5>
+                                    <p class="education__itemText">
+                                        Конструктивная деятельность очень тесно связана с развитием речи. С ребенком проговаривается какой конечный результат он хочет видеть.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/2.svg" alt="Second" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">КРЕАТИВ</h5>
+                                    <p class="education__itemText">
+                                        Наглядно разбираются сложные для ребенка абстрактные понятия, которые есть в математике, физике, программировании.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/3.svg" alt="Third" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">РЕЗУЛЬТАТ</h5>
+                                    <p class="education__itemText">
+                                        Помогаем развивать работоспособность и целеустремленность, поскольку позволяет детям в конце занятия увидеть проделанную работу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/4.svg" alt="Fourth" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">КОМАНДНУЮ РАБОТУ</h5>
+                                    <p class="education__itemText">
+                                        Способствует сплочению детского коллектива, формированию чувства симпатии друг к другу - дети учатся совместно решать задачи, распределять роли.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/5.svg" alt="Fifth" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">МОЗГОВОЙ ШТУРМ</h5>
+                                    <p class="education__itemText">
+                                        Развивает и совершенствует память, внимание, мышление. Тренирует пальцы кистей рук - мелкую моторику.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education__item">
+                                <div class="education__itemNum">
+                                    <img src="img/pics/6.svg" alt="Sixth" loading='lazy'>
+                                </div>
+                                <div class="education__itemInfo">
+                                    <h5 class="education__itemTitle">ВООБРАЖЕНИЕ</h5>
+                                    <p class="education__itemText">
+                                        LEGO способствует развитию у детей сенсорных представлений, так как используются детали различной формы, размера и цвета.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/pics/bblock.svg" alt="Blue block" class="education__bBlock">
+                </div>
+            </section>
+            <section class="teachers">
+                <div class="teachers__wrapper container">
+                    <h2 class="teachers__title">наши преподаватели</h2>
+                    <div class="teachers__slider">
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t1.png" alt="Татьяна Котлубей" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Татьяна Котлубей</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t2.png" alt="Владимир Лысых" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Владимир Лысых</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t3.png" alt="Татьяна  Меняйлой" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Татьяна  Меняйло</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t4.png" alt="Владимир Гагарин" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Владимир Гагарин</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t5.png" alt="Анастасия Пономарева" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Анастасия Пономарева</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t1.png" alt="Татьяна Котлубей" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Татьяна Котлубей</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t2.png" alt="Владимир Лысых" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Владимир Лысых</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t3.png" alt="Татьяна  Меняйлой" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Татьяна  Меняйло</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t4.png" alt="Владимир Гагарин" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Владимир Гагарин</p>
+                        </div>
+                        <div class="teachers__sliderItem">
+                            <img src="img/pics/t5.png" alt="Анастасия Пономарева" class="teachers__img" loading='lazy'>
+                            <p class="teachers__name">Анастасия Пономарева</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="events">
+                <div class="events__wrapper container">
+                    <h2 class="events__title">Мероприятия</h2>
+                    <div class="events__body">
+                        <div class="events__sliderMob">
+                            
+                        </div>
+                        <div class="events__slider">
+                            <div class="events__slide">
+                                <div class="events__slideTop">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S1.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S2.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S3.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                                <div class="events__slideBottom">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S4.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S5.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S6.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__slide">
+                                <div class="events__slideTop">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S7.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S8.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S9.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                                <div class="events__slideBottom">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S10.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S11.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S12.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events__slide">
+                                <div class="events__slideTop">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S13.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S14.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S15.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                                <div class="events__slideBottom">
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S16.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S17.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                    <div class="events__slideItem">
+                                        <img src="img/pics/S18.png" alt="kids" class="events__slideImg" data-da="events__sliderMob, first, 700" loading='lazy'>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="disc">
+                <div class="disc__wrapper container">
+                    <h2 class="disc__title">при оплате за 3 месяца - скидка!*</h2>
+                    <h4 class="disc__info">*только для абонентов Тринити</p>
+                    <button class="disc__btn btn">подключиться</button>
+                    <h4 class="disc__info">Подключите Тринити и воспользуйтесь скидкой!</p>
+                    <img src="img/pics/boy2.png" alt="Boy" class="disc_img" loading='lazy'>
+                </div>
+            </section>
+            <section class="stat">
+                <div class="stat__wrapper container">
+                    <div class="stat__columns">
+                        <div class="stat__column">
+                            <div class="stat__num">15</div>
+                            <div class="stat__name">групп</div>
+                        </div>
+                        <div class="stat__column">
+                            <div class="stat__num">200</div>
+                            <div class="stat__name">учеников</div>
+                        </div>
+                        <div class="stat__column">
+                            <div class="stat__num">6</div>
+                            <div class="stat__name">направлений</div>
+                        </div>
+                        <div class="stat__column">
+                            <div class="stat__num">500</div>
+                            <div class="stat__name">выпускников</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="questions__wrapper container">
+                    <img src="img/pics/robots.png" alt="" class="questions__img" loading='lazy'>
+                    <div class="questions__body">
+                        <h2 class="questions__title">остались вопросы?</h2>
+                        <h4 class="questions__subtitle">оставьте номер телефона и мы перезвоним Вам!</p>
+                        <form name="feedback" class="questions__callback">
+                            <input type="text" name="name" class="questions__input input" placeholder="ваше имя" required>
+                            <input type="tel" name="phone" id="phone-mask2" class="questions__input input" required>
+                            <button class="questions__btn btn">
+                                обратный звонок
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <h2 class="footer__title">контакты</h2>
+                <div class="footer__body">
+                    <div class="footer__info">
+                        <div class="footer__social">
+                            <a href="#" class="footer__socialIcon socialIcon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="footer__socialIcon socialIcon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="footer__socialIcon socialIcon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="footer__infoItem">
+                            <p class="footer__infoStroke">
+                                Режим работы:
+                            </p>
+                            <p class="footer__infoStroke">
+                                ежедневно с 8:00 до 20:00 без перерыва
+                            </p>
+                        </div>
+                        <div class="footer__infoItem">
+                            <p class="footer__infoStroke">
+                                КОМПАНИЯ:
+                            </p>
+                            <p class="footer__infoStroke">
+                                TRINITY
+                            </p>
+                        </div>
+                        <div class="footer__infoItem">
+                            <p class="footer__infoStroke">
+                                АДРЕС:
+                            </p>
+                            <p class="footer__infoStroke">
+                                Мариуполь, ул. Громовой, 63
+                            </p>
+                        </div>
+                        <div class="footer__infoItem">
+                            <p class="footer__infoStroke">
+                                ТЕЛЕФОН:
+                            </p>
+                            <p>
+                                <a href="tel:0629512033" class="footer__phone">
+                                    (0629) 51-20-33
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:+0981000700" class="footer__phone">
+                                    (098) 1000-700
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:+0991000700" class="footer__phone">
+                                    (099) 1000-700
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:+0631000700" class="footer__phone">
+                                    (063) 1000-700
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1358.0703690356677!2d37.51431860558071!3d47.096311583556414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e6e37e5f9eba89%3A0xf87ef5b2c01d215a!2z0LLRg9C70LjRhtGPINCT0YDQvtC80L7QstC-0ZcsIDYzLCDQnNCw0YDRltGD0L_QvtC70YwsINCU0L7QvdC10YbRjNC60LAg0L7QsdC70LDRgdGC0YwsIDg3NTAw!5e0!3m2!1suk!2sua!4v1607889812263!5m2!1suk!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading='lazy'></iframe>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <script>
+            var phoneMask = IMask(
+            document.getElementById('phone-mask'), {
+                mask: '{(+38\\0)}000000000',
+                lazy: false,
+                placeholderChar: '_',
+            });
+            var phoneMask1 = IMask(
+            document.getElementById('phone-mask1'), {
+                mask: '{(+38\\0)}000000000',
+                lazy: false,
+                placeholderChar: '_',
+            });
+            var phoneMask2 = IMask(
+            document.getElementById('phone-mask2'), {
+                mask: '{(+38\\0)}000000000',
+                lazy: false,
+                placeholderChar: '_',
+            });
+        </script>
+        <script src="js/main-min.js"></script>
+    </body>
+</html>
