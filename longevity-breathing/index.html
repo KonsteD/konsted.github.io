@@ -30,12 +30,16 @@ body{
     -webkit-tap-highlight-color:transparent;
 }
 .card{
+    position:relative;
+    z-index:1;
     display:flex;flex-direction:column;align-items:center;gap:14px;
     padding:20px 20px 18px;
-    background:rgba(255,255,255,.03);
-    border:1px solid rgba(255,255,255,.06);
+    background:rgba(255,255,255,.01);
+    border:1px solid rgba(255,255,255,.08);
     border-radius:24px;
-    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(2px);
+    backdrop-filter:blur(2px);
+    box-shadow:0 8px 32px rgba(0,0,0,.25);
     max-width:360px;width:calc(100vw - 32px);
     max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);
     overflow-y:auto;-webkit-overflow-scrolling:touch;
@@ -169,22 +173,65 @@ body{
     0%,100%{ opacity:.7; }
     50%{     opacity:1;  }
 }
-.btns{display:flex;gap:8px;flex-shrink:0;flex-wrap:wrap;justify-content:center}
+.btns{display:flex;gap:16px;flex-shrink:0;justify-content:center;align-items:center;min-height:60px}
 .b{
-    padding:10px 22px;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;
-    border:none;border-radius:30px;cursor:pointer;
-    transition:all .25s;font-weight:500;font-family:inherit;
+    /* shared glass pill/circle: sheer surface + blur, tinted by --tint */
+    --tint:255,255,255;
+    position:relative;
+    border:1px solid rgba(var(--tint),.4);
+    background:rgba(var(--tint),.06);
+    color:rgb(var(--tint));
+    -webkit-backdrop-filter:blur(8px) saturate(140%);
+    backdrop-filter:blur(8px) saturate(140%);
+    box-shadow:
+        inset 0 0 16px rgba(var(--tint),.12),
+        inset 0 1px 0 rgba(255,255,255,.15),
+        0 4px 12px rgba(0,0,0,.2);
+    cursor:pointer;
+    transition:background .2s ease, border-color .2s ease, box-shadow .25s ease, transform .15s ease, opacity .25s ease;
+    font-family:inherit;
     -webkit-appearance:none;appearance:none;outline:none;
-    min-height:44px;min-width:44px;
     display:inline-flex;align-items:center;justify-content:center;
-    touch-action:manipulation;color:#fff;
+    touch-action:manipulation;
+    padding:0;
 }
-.b:disabled{opacity:.2;cursor:default}
-.b:active:not(:disabled){transform:scale(.95)}
-.b-go{background:linear-gradient(135deg,#4fc3f7,#0288d1)}
-.b-pa{background:linear-gradient(135deg,#ffb74d,#f57c00)}
-.b-res{background:linear-gradient(135deg,#66bb6a,#2e7d32)}
-.b-stop{background:linear-gradient(135deg,#ef5350,#c62828)}
+.b svg{ width:22px;height:22px;display:block; }
+.b:hover:not(:disabled){
+    background:rgba(var(--tint),.09);
+    border-color:rgba(var(--tint),.5);
+    box-shadow:
+        inset 0 0 18px rgba(var(--tint),.15),
+        inset 0 1px 0 rgba(255,255,255,.18),
+        0 0 12px rgba(var(--tint),.15),
+        0 4px 12px rgba(0,0,0,.22);
+}
+.b:active:not(:disabled){ transform:scale(.92); }
+.b:disabled{
+    display:none;           /* primary pair swaps via disabled; stop hides in idle */
+}
+
+/* primary (start / pause / resume) — larger circle, center-stage */
+.b-go,.b-pa{
+    width:60px;height:60px;border-radius:50%;
+}
+.b-go svg,.b-pa svg{ width:26px;height:26px; }
+.b-go{ --tint:79,195,247; }   /* cyan  */
+.b-pa{ --tint:255,183,77; }   /* amber */
+.b-pa.b-res{ --tint:102,187,106; } /* green */
+
+/* secondary stop — smaller, visually less loud */
+.b-stop{
+    width:44px;height:44px;border-radius:50%;
+    --tint:239,83,80;         /* red */
+}
+
+/* pause/resume icon swap — the same button holds both; class decides which shows */
+.b-pa .ic-resume{ display:none; }
+.b-pa.b-res .ic-pause{ display:none; }
+.b-pa.b-res .ic-resume{ display:block; }
+
+/* nudge the play triangle visually to account for its asymmetry */
+.b-go svg,.b-pa.b-res svg{ transform:translateX(1.5px); }
 .cfg-wrap{width:100%;flex-shrink:0}
 .cfg-toggle{
     display:flex;align-items:center;justify-content:center;gap:5px;
@@ -236,16 +283,54 @@ input[type="range"]:focus{outline:none}
 .sw{position:relative;width:44px;height:26px;cursor:pointer;touch-action:manipulation}
 .sw input{opacity:0;width:0;height:0;position:absolute}
 .sw .tr{
-    position:absolute;inset:0;background:rgba(255,255,255,.07);
-    border-radius:26px;transition:.3s;
+    position:absolute;inset:0;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:26px;
+    transition:background .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 .sw .tr::before{
     content:'';position:absolute;
-    width:20px;height:20px;left:3px;top:3px;
-    background:#556;border-radius:50%;transition:.3s;
+    width:18px;height:18px;
+    left:3px;top:3px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.2),
+        0 2px 4px rgba(0,0,0,.2);
+    transition:transform .25s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
-.sw input:checked + .tr{background:rgba(79,195,247,.2)}
-.sw input:checked + .tr::before{transform:translateX(18px);background:#4fc3f7}
+/* subtle hover on the whole switch (off-state): slightly lighter track + knob */
+.sw:hover .tr{
+    background:rgba(255,255,255,.08);
+    border-color:rgba(255,255,255,.2);
+}
+.sw:hover .tr::before{
+    background:rgba(255,255,255,.14);
+    border-color:rgba(255,255,255,.35);
+}
+.sw input:checked + .tr{
+    background:rgba(79,195,247,.12);
+    border-color:rgba(79,195,247,.45);
+    box-shadow:inset 0 0 8px rgba(79,195,247,.15);
+}
+/* on-state knob: match the slider thumb — gradient fill + soft glow */
+.sw input:checked + .tr::before{
+    transform:translateX(18px);
+    background:linear-gradient(135deg,#4fc3f7,#0288d1);
+    border-color:transparent;
+    box-shadow:0 0 5px rgba(79,195,247,.3);
+}
+/* hover while on: brighter track + stronger knob glow */
+.sw:hover input:checked + .tr{
+    background:rgba(79,195,247,.18);
+    border-color:rgba(79,195,247,.6);
+    box-shadow:inset 0 0 10px rgba(79,195,247,.22);
+}
+.sw:hover input:checked + .tr::before{
+    box-shadow:0 0 10px rgba(79,195,247,.5);
+}
 .dur-wrap{max-height:0;overflow:hidden;transition:max-height .3s ease}
 .dur-wrap.open{max-height:80px;overflow:visible}
 .ov{
@@ -259,7 +344,7 @@ input[type="range"]:focus{outline:none}
 .ov.show{opacity:1;pointer-events:all}
 .ov h2{font-size:1.3rem;font-weight:300;letter-spacing:4px;color:#66bb6a}
 .ov p{font-size:.8rem;color:rgba(176,196,255,.5);letter-spacing:1.5px}
-.particles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:-1}
+.particles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .star{
     position:absolute;border-radius:50%;
     background:#fff;
@@ -360,9 +445,16 @@ input[type="range"]:focus{outline:none}
     </div>
 
     <div class="btns">
-        <button class="b b-go" id="goBtn">Start</button>
-        <button class="b b-pa" id="paBtn" disabled>Pause</button>
-        <button class="b b-stop" id="stBtn" disabled>Stop</button>
+        <button class="b b-go" id="goBtn" aria-label="Start">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+        <button class="b b-pa" id="paBtn" disabled aria-label="Pause">
+            <svg class="ic-pause" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="7" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/><rect x="13.5" y="5" width="3.5" height="14" rx="1.2" fill="currentColor"/></svg>
+            <svg class="ic-resume" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+        </button>
+        <button class="b b-stop" id="stBtn" disabled aria-label="Stop">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1.5" fill="currentColor"/></svg>
+        </button>
     </div>
 
     <div class="cfg-wrap">
@@ -538,8 +630,8 @@ input[type="range"]:focus{outline:none}
             orb.classList.add('dim');
             phTxt.textContent = 'Paused';
             phTxt.classList.add('blink');
-            paBtn.textContent = 'Resume';
-            paBtn.className = 'b b-res';
+            paBtn.classList.add('b-res');
+            paBtn.setAttribute('aria-label', 'Resume');
         } else {
             psd = false;
             pT0 = now() - pE;
@@ -548,8 +640,8 @@ input[type="range"]:focus{outline:none}
             orb.classList.remove('dim');
             phTxt.classList.remove('blink');
             phTxt.textContent = ph === 'inhale' ? 'Inhale' : ph === 'exhale' ? 'Exhale' : 'Hold';
-            paBtn.textContent = 'Pause';
-            paBtn.className = 'b b-pa';
+            paBtn.classList.remove('b-res');
+            paBtn.setAttribute('aria-label', 'Pause');
             anim();
         }
     }
@@ -560,8 +652,8 @@ input[type="range"]:focus{outline:none}
         clearInterval(sI);
         releaseWake();
         goBtn.disabled = false; paBtn.disabled = true; stBtn.disabled = true;
-        paBtn.textContent = 'Pause';
-        paBtn.className = 'b b-pa';
+        paBtn.classList.remove('b-res');
+        paBtn.setAttribute('aria-label', 'Pause');
         setOrbScale(1);
         orb.className = 'orb';
         orb.style.setProperty('--hold-o', 0);
@@ -730,12 +822,16 @@ input[type="range"]:focus{outline:none}
     (function () {
         var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         var c = $('ptc');
-        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-        // star counts per tier (tiny dust, medium, bright)
-        var nS1 = isMobile ? 80  : 140;
-        var nS2 = isMobile ? 38  : 65;
-        var nS3 = isMobile ? 10  : 16;
+        // Density-based count so a 2K monitor isn't as empty as a phone is full.
+        // ~400 stars per megapixel of viewport, clamped to avoid both
+        // a sparse sky on tiny windows and a DOM flood on 4K displays.
+        var area = window.innerWidth * window.innerHeight;
+        var total = Math.max(80, Math.min(1800, Math.round(area * 400 / 1e6)));
+        // Keep the 63 / 29 / 8 split between dust / medium / bright tiers.
+        var nS1 = Math.round(total * 0.63);
+        var nS2 = Math.round(total * 0.29);
+        var nS3 = total - nS1 - nS2;
 
         var frag = document.createDocumentFragment();
 
